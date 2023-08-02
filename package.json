@@ -1,9 +1,9 @@
 {
 	"name": "assinatura-digital",
-	"version": "1.0.7",
+	"version": "1.1.2",
 	"description": "assinatura digital Felipe",
-	"main": "/dist/src/index.js",
-	"types": "/dist/src/index.d.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"author": "Felipe - Contato: falmeidagomes13@gmail.com",
 	"scripts": {},
 	"repository": {
@@ -12,6 +12,9 @@
 	},
 	"keywords": [
 		"assinatura digital"
+	],
+	"files": [
+		"dist"
 	],
 	"license": "ISC",
 	"bugs": {

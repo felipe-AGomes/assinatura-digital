@@ -1,17 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.generateDigitalSignature = void 0;
 class GenerateDigitalSignature {
-    text;
-    email;
-    message;
-    _alphabet;
-    _transformedText = '';
-    _styleCss = [];
     constructor(text, email, message) {
         this.text = text;
         this.email = email;
         this.message = message;
+        this._transformedText = '';
+        this._styleCss = [];
         this._alphabet = {
             A: ` █████╗ 
 ██╔══██╗
@@ -214,7 +207,6 @@ class GenerateDigitalSignature {
         return [this.transformedText, ...this.style];
     }
 }
-const generateDigitalSignature = (text, email, message) => {
+export const generateDigitalSignature = (text, email, message) => {
     return new GenerateDigitalSignature(text, email, message).perform();
 };
-exports.generateDigitalSignature = generateDigitalSignature;
